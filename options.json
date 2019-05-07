@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "properties": {
+    "plugins": {
+      "anyOf": [
+        {
+          "type": "object"
+        },
+        {
+          "instanceof": "Function"
+        },
+        {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "object"
+              },
+              {
+                "instanceof": "Function"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "processOptions": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

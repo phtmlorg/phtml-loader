@@ -1,0 +1,19 @@
+{
+  "name": "phtml-loader-example",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server",
+    "watch": "webpack --watch"
+  },
+  "devDependencies": {
+    "@phtml/image-size": "^4.0.1",
+    "@phtml/include": "^4.1.0",
+    "@phtml/self-closing": "^4.0.0",
+    "phtml-loader": "..",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.3.1"
+  },
+  "private": true
+}

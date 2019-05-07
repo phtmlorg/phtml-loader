@@ -1,0 +1,56 @@
+{
+  "name": "phtml-loader",
+  "version": "1.0.0",
+  "description": "Use pHTML with Webpack",
+  "author": "Jonathan Neal <jonathantneal@hotmail.com>",
+  "license": "CC0-1.0",
+  "repository": "phtmlorg/phtml-loader",
+  "homepage": "https://github.com/phtmlorg/phtml-loader#readme",
+  "bugs": "https://github.com/phtmlorg/phtml-loader/issues",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "options.json"
+  ],
+  "scripts": {
+    "test": "npm run test:js",
+    "test:js": "eslint *.js --cache --ignore-path .gitignore --quiet"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "dependencies": {
+    "loader-utils": "^1.2.3",
+    "phtml": "^4.0.0",
+    "schema-utils": "^1.0.0"
+  },
+  "peerDependencies": {
+    "phtml": "^4.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "pre-commit": "^1.2.2"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "browser": true,
+      "es6": true,
+      "node": true
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "impliedStrict": true,
+      "sourceType": "module"
+    },
+    "extends": "eslint:recommended"
+  },
+  "keywords": [
+    "html",
+    "loader",
+    "phtml",
+    "webpack"
+  ]
+}
